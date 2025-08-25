@@ -1,4 +1,4 @@
-/**
+    /**
  * Define a hierarquia de especializações.
  * Cada especialização pode conceder habilidades adicionais.
  */

@@ -93,7 +93,6 @@ fun selectSpecialization(specializations: List<Specialization>): Specialization?
     }
 }
 
-// Cole as funções rollAttributes e selectRace da resposta anterior aqui para o código ficar completo
 fun rollAttributes(d6: D6): Attributes {
     while (true) {
         println("\nEscolha o método de rolagem de atributos:")
