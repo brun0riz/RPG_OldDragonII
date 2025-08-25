@@ -26,6 +26,30 @@ object NoArmorProficiency : ClassAbility("Proficiência: Nenhuma Armadura", "Nã
 object ArcaneSpells : ClassAbility("Magias Arcanas", "Capacidade de memorizar e conjurar magias arcanas de um grimório.")
 object DetectMagic : ClassAbility("Detectar Magia", "Pode se concentrar para perceber auras mágicas.")
 
-// --- Habilidades de Especializações (Exemplos) ---
+// --- Habilidades de Especializações ---
+
+// Bárbaro
+object BarbarianRage : ClassAbility("Fúria Bárbara", "Habilidade de entrar em um frenesi de combate.")
+object BarbarianVigor : ClassAbility("Vigor do Bárbaro", "+2 PV por nível e +2 em JPC.")
+
+// Paladino
+object DetectEvil : ClassAbility("Detectar o Mal", "Sentir a presença de intenções malignas.")
+object LayOnHands : ClassAbility("Cura pelas Mãos", "Curar ferimentos através do toque divino.")
+object DivineGrace : ClassAbility("Graça Divina", "Adiciona bônus de Carisma em Jogadas de Proteção.")
+
+// Acadêmico
 object AcademicKnowledge : ClassAbility("Conhecimento Acadêmico", "Pode identificar monstros e suas fraquezas.")
-object AnimalCompanion : ClassAbility("Companheiro Animal", "Ganha um leal companheiro animal (habilidade de Ranger).")
+object IdentifyItems : ClassAbility("Identificar Itens", "Tentar identificar as propriedades de itens mágicos.")
+object DecipherLanguages : ClassAbility("Decifrar Idiomas", "Capacidade de decifrar escritas antigas ou desconhecidas.")
+
+// Ranger
+object AnimalCompanion : ClassAbility("Companheiro Animal", "Ganha um leal companheiro animal.")
+object Tracking : ClassAbility("Rastreamento", "Habilidade de seguir rastros e pistas na natureza.")
+
+// Bardo
+object BardicKnowledge : ClassAbility("Conhecimento de Bardo", "Sabe lendas, rumores e informações úteis.")
+object InspireCourage : ClassAbility("Inspirar Coragem", "Usa música ou oratória para fortalecer aliados.")
+
+// Ilusionista & Necromante
+object IllusionistExclusiveSpells : ClassAbility("Magias Exclusivas (Ilusionista)", "Acesso a magias de ilusão superiores.")
+object NecromancerExclusiveSpells : ClassAbility("Magias Exclusivas (Necromante)", "Acesso a magias de necromancia superiores.")

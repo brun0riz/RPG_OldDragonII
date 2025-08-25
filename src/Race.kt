@@ -13,7 +13,7 @@ sealed class Race(
     object Human : Race(
         name = "Humano", movement = 9, infravision = 0, alignment = "Qualquer",
         abilities = listOf(Learning, Adaptability()),
-        allowedClasses = listOf(Warrior::class, Cleric::class, Thief::class, Mage::class)
+        allowedClasses = listOf(Warrior::class, Cleric::class, Thief::class, Mage::class) // Limitar as classes permitidas
     )
 
     object Elf : Race(

@@ -22,6 +22,7 @@ fun main() {
     player.showPlayerProfile()
 }
 
+// Selecionar a classe do personagem
 fun selectClass(playerRace: Race): CharacterClass {
     // Mapa de todas as classes disponíveis no jogo
     val allGameClasses = mapOf(
@@ -47,6 +48,7 @@ fun selectClass(playerRace: Race): CharacterClass {
             val chosenClass = classOptions[choice - 1]
             val specializations = availableClasses[chosenClass]
 
+            // Perguntar se o usuário deseja ter uma especialização
             var chosenSpecialization: Specialization? = null
             if (!specializations.isNullOrEmpty()) {
                 chosenSpecialization = selectSpecialization(specializations)
@@ -66,6 +68,7 @@ fun selectClass(playerRace: Race): CharacterClass {
     }
 }
 
+// Escolher uma especialização para o personagem
 fun selectSpecialization(specializations: List<Specialization>): Specialization? {
     while (true) {
         println("\nDeseja escolher uma especialização?")
@@ -93,6 +96,7 @@ fun selectSpecialization(specializations: List<Specialization>): Specialization?
     }
 }
 
+// Método para escolher qual estilo de jogo(Clássico, aventureiro e heróico)
 fun rollAttributes(d6: D6): Attributes {
     while (true) {
         println("\nEscolha o método de rolagem de atributos:")
@@ -110,6 +114,7 @@ fun rollAttributes(d6: D6): Attributes {
     }
 }
 
+// Selecionar as raças(Humano, elfo, anão e Halfling)
 fun selectRace(): Race {
     val races = listOf(Race.Human, Race.Elf, Race.Dwarf, Race.Halfling)
     while (true) {
